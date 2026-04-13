@@ -1,0 +1,120 @@
+.camps-page {
+  padding: 20px;
+}
+
+.camps-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-camp-btn {
+  background: #d32f2f;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.camps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.camp-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.camp-date {
+  background: #ffebee;
+  color: #c62828;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 60px;
+}
+
+.camp-date .month {
+  display: block;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.camp-date .day {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.camp-info h3 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.camp-info p {
+  margin: 2px 0;
+  color: #666;
+  font-size: 0.9em;
+}
+
+.camp-desc {
+  font-style: italic;
+  margin-top: 5px;
+  color: #888;
+}
+
+/* Modal Reuse - Ensure this matches your existing modal styles or add here */
+.modal-backdrop {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-card input, .modal-card textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.modal-actions span {
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.modal-actions span:last-child {
+  background: #d32f2f;
+  color: white;
+}

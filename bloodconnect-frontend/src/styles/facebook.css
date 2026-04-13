@@ -1,0 +1,570 @@
+/* ===== GLOBAL RESET ===== */
+html, body, #root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ===== APP WRAPPER ===== */
+.fb-app {
+  background: #f0f2f5;
+  min-height: 100vh;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+/* ===== TOP NAV ===== */
+.fb-topbar {
+  height: 56px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.fb-search {
+  background: #f0f2f5;
+  border-radius: 999px;
+  padding: 8px 14px;
+  border: none;
+  width: 240px;
+  outline: none;
+}
+
+/* ===== MAIN LAYOUT (IMPORTANT) ===== */
+.fb-body {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr) 300px;
+  gap: 16px;
+  padding: 16px 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+
+
+/* ===== LEFT / RIGHT STICKY ===== */
+.fb-left,
+.fb-right {
+  position: sticky;
+  top: 76px;
+  align-self: flex-start;
+}
+
+/* ===== SIDEBAR ===== */
+.fb-sidebar {
+  background: white;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.fb-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.fb-nav-item:hover {
+  background: #e4e6eb;
+}
+
+/* ===== CENTER FEED ===== */
+.fb-feed {
+  width: 100%;
+}
+.fb-feed {
+  padding-bottom: 40px;
+}
+
+
+/* ===== STORIES ===== */
+.fb-stories {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.fb-story {
+  width: 110px;
+  height: 190px;
+  background: #ccc;
+  border-radius: 10px;
+}
+
+/* ===== URGENT REQUEST CARD ===== */
+.urgent-card {
+  background: #fff5f5;
+  border-left: 5px solid #e53935;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.urgent-card h4 {
+  color: #c62828;
+  margin-bottom: 10px;
+}
+
+.urgent-item {
+  color: #b71c1c;
+  font-weight: 600;
+  margin: 6px 0;
+}
+
+/* ===== CREATE POST ===== */
+.create-post {
+  background: white;
+  padding: 14px;
+  border-radius: 14px;
+  margin-bottom: 16px;
+}
+
+.create-top {
+  display: flex;
+  gap: 10px;
+}
+
+.create-top input {
+  flex: 1;
+  border-radius: 20px;
+  border: none;
+  background: #f0f2f5;
+  padding: 10px;
+  outline: none;
+}
+
+.create-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  color: #555;
+  font-weight: 600;
+}
+
+/* ===== IMPACT CARD ===== */
+.impact-card {
+  background: linear-gradient(135deg, #ffebee, #ffffff);
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 16px;
+}
+
+.impact-card h4 {
+  color: #c62828;
+}
+
+.impact-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.btn-primary {
+  background: #e53935;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-outline {
+  border: 1px solid #e53935;
+  color: #e53935;
+  background: transparent;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ===== POST ===== */
+.post-card {
+  background: white;
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 16px;
+  transition: 0.3s;
+}
+
+.post-image {
+  width: 100%;
+  max-height: 420px;        /* 🔑 THIS FIXES THE GAP */
+  object-fit: cover;        /* Crop like Facebook */
+  border-radius: 10px;
+  margin-top: 10px;
+  background: #f0f2f5;
+}
+
+
+.post-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.post-header {
+  display: flex;
+  gap: 10px;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.post-location {
+  font-size: 12px;
+  color: gray;
+}
+
+.post-text {
+  margin: 10px 0;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-around;
+  color: gray;
+  border-top: 1px solid #ddd;
+  padding-top: 8px;
+}
+
+.nearby-post {
+  border-left: 4px solid #1976d2;
+}
+
+/* ===== RIGHT SIDEBAR CARDS ===== */
+.availability-card,
+.stats-card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.blood-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0;
+}
+
+.available {
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+.critical {
+  color: #c62828;
+  font-weight: 600;
+}
+
+.stats-card {
+  background: #f1f8e9;
+}
+
+/* ===== RESPONSIVE (OPTIONAL) ===== */
+@media (max-width: 1200px) {
+  .fb-body {
+    grid-template-columns: 260px 1fr 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .fb-body {
+    grid-template-columns: 1fr;
+  }
+
+  .fb-left {
+    display: none;
+  }
+}
+/* ===== STORIES ENHANCED ===== */
+.fb-story {
+  width: 110px;
+  height: 190px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.story-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.story-avatar {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 3px solid #1877f2;
+}
+
+.story-name {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.fb-story:hover {
+  transform: scale(1.04);
+  transition: 0.3s;
+}
+.nearby-badge {
+  background: #e3f2fd;
+  color: #1976d2;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-left: 6px;
+}
+.post-actions div:hover {
+  color: #1877f2;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #c62828;
+}
+
+.fb-nav-item:hover {
+  background: #e4e6eb;
+}
+.fb-right,
+.right-sidebar-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.post-image-wrapper {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.side-card {
+  background: white;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+}
+.side-card h4 {
+  margin-bottom: 10px;
+}
+.post-actions {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 8px;
+  border-top: 1px solid #eee;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.post-actions div:hover {
+  color: #1877f2;
+}
+.nearby-post {
+  border-left: 4px solid #1877f2;
+  background: #f7fbff;
+}
+
+.nearby-badge {
+  background: #e3f2fd;
+  color: #1976d2;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-left: 6px;
+}
+.fb-story {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.fb-story:hover {
+  transform: scale(1.03);
+}
+.fb-card,
+.post-card,
+.side-card {
+  transition: box-shadow 0.25s, transform 0.25s;
+}
+
+.fb-card:hover,
+.post-card:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+/* ===== AUTH LAYOUT ===== */
+.auth-layout {
+  min-height: 100vh;
+  display: flex;
+  background: #f0f2f5;
+}
+
+/* LEFT BRAND PANEL */
+.auth-brand {
+  flex: 1;
+  background: linear-gradient(135deg, #e53935, #b71c1c);
+  color: white;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-brand h1 {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.auth-brand p {
+  font-size: 18px;
+  max-width: 420px;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+/* RIGHT FORM PANEL */
+.auth-form-panel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-card {
+  width: 380px;
+  background: white;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  animation: fadeUp 0.4s ease;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.auth-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.auth-title h2 {
+  margin-bottom: 6px;
+}
+
+.auth-title span {
+  font-size: 14px;
+  color: #666;
+}
+
+/* INPUT FIELDS */
+.auth-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f0f2f5;
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin-bottom: 14px;
+}
+
+.auth-field input {
+  border: none;
+  background: transparent;
+  outline: none;
+  flex: 1;
+}
+
+.auth-field svg {
+  color: #e53935;
+}
+
+/* BUTTON */
+.auth-btn {
+  width: 100%;
+  padding: 12px;
+  background: #e53935;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-btn:hover {
+  background: #c62828;
+  transform: translateY(-1px);
+}
+
+/* LINKS */
+.auth-link {
+  text-align: center;
+  margin-top: 14px;
+  font-size: 14px;
+  color: #1877f2;
+  cursor: pointer;
+}
+
+/* ERRORS & SUCCESS */
+.auth-error {
+  color: #c62828;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.auth-success {
+  color: #2e7d32;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .auth-brand {
+    display: none;
+  }
+  .auth-layout {
+    justify-content: center;
+  }
+}
+.post-card {
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.post-card:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+.fb-center {
+  min-width: 0;
+}
+.fb-center {
+  width: 100%;
+  min-width: 0;
+}
+/* 🔒 Lock profile images – NEVER behave like post images */
+
+
+
+

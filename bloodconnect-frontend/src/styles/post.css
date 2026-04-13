@@ -1,0 +1,8 @@
+.postProfileImg.placeholder {
+  background: #ddd;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}

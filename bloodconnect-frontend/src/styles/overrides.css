@@ -1,0 +1,44 @@
+/* ===== FINAL LAYOUT FIX ===== */
+
+/* Allow full width usage */
+.home {
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  background-color: #f0f2f5;
+}
+
+/* Remove artificial max-width */
+.homeContainer {
+  max-width: 100% !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Sidebar fixed, feed flexible */
+.sidebar {
+  flex: 0 0 260px;
+}
+
+.feed {
+  flex: 1;
+  max-width: 680px;
+  width: 100%;
+}
+
+/* Rightbar optional but keeps spacing */
+.rightbar {
+  flex: 0 0 300px;
+}
+
+/* Proper card spacing */
+.post {
+  margin-bottom: 20px;
+}
+
+/* Center feed on large screens */
+@media (min-width: 1200px) {
+  .homeContainer {
+    justify-content: center;
+  }
+}

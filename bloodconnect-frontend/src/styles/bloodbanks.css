@@ -1,0 +1,123 @@
+.blood-banks-page {
+    padding: 20px;
+}
+
+.bb-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.add-bb-btn {
+    background: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.bb-filters input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.bb-list {
+    display: grid;
+    gap: 15px;
+}
+
+.bb-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.bb-icon {
+    font-size: 2em;
+    color: #d32f2f;
+    background: #fee;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.bb-info h3 {
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.bb-info p {
+    margin: 3px 0;
+    color: #666;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.bb-type {
+    display: inline-block;
+    background: #e3f2fd;
+    color: #1976d2 !important;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8em !important;
+    font-weight: bold;
+}
+
+/* MODAL */
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+}
+
+.modal-content input, .modal-content select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.modal-actions button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-btn {
+    background: #d32f2f;
+    color: white;
+}

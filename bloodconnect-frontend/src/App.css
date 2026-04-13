@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  background-color: #1e1e1e;
+  min-height: 100vh;
+  color: white;
+}
+
+.feed {
+  flex: 6;
+  padding: 20px;
+}
+
+.post {
+  background: #2a2a2a;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+}

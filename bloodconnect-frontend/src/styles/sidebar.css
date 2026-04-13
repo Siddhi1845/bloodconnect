@@ -1,0 +1,85 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px;
+}
+
+.sidebar-item {
+  padding: 12px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.sidebar-item:hover {
+  background: #f5f5f5;
+  transform: translateX(4px);
+}
+
+/* ACTIVE LINK */
+.active-link {
+  background: #ffecec;
+  color: #c62828;
+  font-weight: 600;
+  box-shadow: inset 4px 0 0 #c62828;
+}
+
+/* COMPATIBILITY TABLE */
+.compat-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #c62828;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #ffebee;
+  padding-bottom: 8px;
+}
+
+.compat-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.compat-table thead {
+  background-color: #c62828;
+  color: white;
+}
+
+.compat-table th {
+  padding: 10px;
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.compat-table td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  color: #444;
+}
+
+.compat-table tbody tr:nth-child(even) {
+  background-color: #fff9fa;
+}
+
+.compat-table tbody tr:hover {
+  background-color: #ffebee;
+  transform: scale(1.01);
+  transition: all 0.2s ease;
+  cursor: default;
+}
+
+.compat-table .blood-type {
+  font-weight: 700;
+  color: #c62828;
+  background-color: #fff0f0;
+  text-align: center;
+  border-radius: 4px;
+}

@@ -1,0 +1,57 @@
+body {
+  background-color: #f0f2f5;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #050505;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+input.form-control {
+  background-color: #f0f2f5;
+  border: none;
+}
+
+input.form-control:focus {
+  box-shadow: none;
+  background-color: #e4e6eb;
+}
+.card {
+  background-color: #ffffff;
+}
+
+.text-muted {
+  color: #65676b !important;
+}
+body {
+  font-size: 14px;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.list-group-item {
+  border: none;
+  padding: 10px 12px;
+}
+
+.list-group-item:hover {
+  background-color: #f0f2f5;
+}
+body {
+  font-size: 14px;
+}
+
+.text-muted {
+  color: #65676b;
+}
+
+body,
+.fb-app,
+.fb-body,
+.fb-center {
+  background: #f5f6f7 !important;
+  background-image: none !important;
+}

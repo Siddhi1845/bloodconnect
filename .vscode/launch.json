@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Backend: Connect",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/bloodconnect-backend/server.js",
+      "cwd": "${workspaceFolder}/bloodconnect-backend"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Frontend: Dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev"
+      ],
+      "cwd": "${workspaceFolder}/bloodconnect-frontend"
+    }
+  ]
+}

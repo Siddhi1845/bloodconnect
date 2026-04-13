@@ -1,0 +1,164 @@
+.fb-topbar {
+  height: 60px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.topbar-profile img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  font-size: 26px;
+}
+
+.logo-text {
+  font-size: 18px;
+}
+
+.fb-search {
+  padding: 6px 10px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.topbar-center {
+  display: flex;
+  gap: 40px;
+}
+
+.topbar-center svg {
+  cursor: pointer;
+  color: #555;
+}
+
+.topbar-center svg:hover {
+  color: #e53935;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.topbar-profile {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.nav-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e53935;
+}
+
+/* NOTIFICATIONS */
+.notif-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notif-dropdown {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 300px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.notif-dropdown h6 {
+  margin: 0 0 10px 0;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+  color: #d32f2f;
+}
+
+.notif-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.notif-item {
+  padding: 8px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.notif-item:last-child {
+  border-bottom: none;
+}
+
+.notif-item p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #333;
+}
+
+.notif-item span {
+  font-size: 0.75em;
+  color: #888;
+}
+
+/* MOBILE RESPONSIVE NAV */
+@media (max-width: 768px) {
+  .topbar-center {
+    display: none;
+    /* Hide top icons, use BottomNav */
+  }
+
+  .fb-search {
+    display: none;
+    /* Hide search bar for simplicity on small screens, or reduce width */
+  }
+
+  .logo-text {
+    display: none;
+  }
+
+  .topbar-profile span {
+    display: none;
+    /* Hide User Name */
+  }
+
+  .topbar-right {
+    gap: 10px;
+  }
+
+  .fb-topbar {
+    padding: 0 10px;
+    justify-content: space-between;
+  }
+}
