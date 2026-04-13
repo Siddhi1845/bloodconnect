@@ -51,18 +51,31 @@ During this internship, I worked on **BloodConnect: A Social Blood Donation Plat
 ---
 ## 📸 Screenshots
 
-### 🏠 Camps Page
-![Home](camps.jpg)
+## 📸 Screenshots
 
-### 📊 Dashboard
-![Dashboard](dashboard.jpg)
+### 🏠 Dashboard
+<p align="center">
+  <img src="dashboard.jpg" width="700"/>
+</p>
 
-### Donor Page
-![Login](donor.jpg)
+### 🩸 Blood Requests
+<p align="center">
+  <img src="request.jpg" width="700"/>
+</p>
 
-## Banks Page
-![Banks](banks.jpg)
+### 👥 Donors
+<p align="center">
+  <img src="donor.jpg" width="700"/>
+</p>
 
-## Requests Page
-![Requests](requests.jpg)
+### 🏕️ Camps
+<p align="center">
+  <img src="camps.jpg" width="700"/>
+</p>
+
+### 🏥 Blood Banks
+<p align="center">
+  <img src="banks.jpg" width="700"/>
+</p>
+
 ## 📁 Project Structure
