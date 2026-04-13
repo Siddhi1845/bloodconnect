@@ -49,5 +49,15 @@ During this internship, I worked on **BloodConnect: A Social Blood Donation Plat
 - 🔗 Full-stack Integration
 
 ---
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home](home.png)
+
+### 📊 Dashboard
+![Dashboard](dashboard.png)
+
+### 🔐 Login Page
+![Login](login.png)
 
 ## 📁 Project Structure
